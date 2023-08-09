@@ -1,0 +1,22 @@
+#appHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 2em;
+    margin: 1em 0 1em 0;
+}
+
+.app_header__container {
+    width: 33%;
+}
+
+.app_header__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.app_header__main-text {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,60 @@
+.challenge-card__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #19bec9;
+    box-shadow: 5px 5px 5px #e1e1e1;
+    border-radius: 10px;
+    background-color: #19bec910;
+    /* background-color: #111111; */
+    color: #111111;
+    font-size: 1.3rem;
+    width: 90%;
+    height: 60px;
+    position: relative;
+    z-index: 1;
+}
+.checked {
+    float: right;
+}
+.challenge-state__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.wrapper__success {
+    background-color: #19bec9;
+}
+
+.wrapper__fail {
+    background-color: #dbdbdb;
+    border-color: #dbdbdb;
+}
+
+.challenge-card__title {
+    font-size: 1rem;
+}
+.challenge-state__message {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.challenge-state__time {
+    margin: 0;
+    color: #19bec9;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.state__success {
+    margin: 0;
+    font-weight: 1rem;
+    font-weight: bold;
+}

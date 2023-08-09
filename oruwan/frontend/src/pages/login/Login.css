@@ -1,0 +1,108 @@
+#loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 100vh;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.login__label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.login__input__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 3rem;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #f5f5f5;
+    color: #363636;
+}
+
+.login__input__wrapper:focus-within {
+    border: 1px solid #19bec9;
+    background-color: #f3fbfc;
+}
+
+.login__input__wrapper--error {
+    border: 1px solid #ff0000 !important;
+}
+
+.login__input {
+    width: 100%;
+    height: 50%;
+    margin-left: 1rem;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: inherit;
+    font-size: 1rem;
+}
+
+.login__error-message {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    height: 20px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    color: #ff0000;
+}
+
+.login__submit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 3rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: #19bec9;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login__navigate {
+    margin-top: 5rem;
+}
+
+.login__navigate__btn {
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    font-size: 1rem;
+    text-decoration: underline;
+}

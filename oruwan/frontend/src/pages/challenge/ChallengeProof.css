@@ -1,0 +1,425 @@
+#challengeproofContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    align-items: center;
+}
+
+.proof__input {
+    visibility: hidden;
+}
+
+.proof__image-wrapper {
+    width: 15rem;
+    height: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-sizing: border-box;
+}
+
+.proof-image--loading {
+    border: 0.5rem solid #19bec9;
+    border-radius: 1rem;
+}
+
+.proof-image--success {
+    border: 0.5rem solid #19bec9;
+    border-radius: 1rem;
+}
+
+.proof-image--fail {
+    border: 0.5rem solid #ff6b6b;
+    border-radius: 1rem;
+    filter: grayscale(100%);
+}
+
+.proof-image {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.proof-image--loading {
+    filter: opacity(30%);
+}
+
+.proof-image--success {
+    filter: opacity(100%);
+}
+
+.proof__main-text {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.proof__description-text {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* 로딩 애니메이션 */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+}
+.lds-ellipsis div {
+    position: absolute;
+    top: 7rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #19bec9;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+    left: -10rem;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+    left: -10rem;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+    left: -8rem;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+    left: -6rem;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(2rem, 0);
+    }
+}
+
+/* 성공 애니메이션 */
+/* https://jsfiddle.net/sirhvd/6u9q7znc/ - Huy Vo */
+
+.alert-popup-container {
+    text-align: center;
+}
+
+.alert-popup-title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #19bec9;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    position: relative;
+}
+
+.alert-popup-message {
+    color: #777;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.success-checkmark {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+
+    .check-icon {
+        width: 80px;
+        height: 80px;
+        position: relative;
+        border-radius: 50%;
+        box-sizing: content-box;
+        border: 4px solid #4caf50;
+
+        &::before {
+            top: 3px;
+            left: -2px;
+            width: 30px;
+            transform-origin: 100% 50%;
+            border-radius: 100px 0 0 100px;
+        }
+
+        &::after {
+            top: 0;
+            left: 30px;
+            width: 60px;
+            transform-origin: 0 50%;
+            border-radius: 0 100px 100px 0;
+            animation: rotate-circle 4.25s ease-in;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            height: 100px;
+            position: absolute;
+            background: #ffffff;
+            transform: rotate(-45deg);
+            z-index: 2;
+        }
+
+        .icon-line {
+            height: 5px;
+            background-color: #4caf50;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 10;
+
+            &.line-tip {
+                top: 46px;
+                left: 14px;
+                width: 25px;
+                transform: rotate(45deg);
+                animation: icon-line-tip 0.75s;
+            }
+
+            &.line-long {
+                top: 38px;
+                right: 8px;
+                width: 47px;
+                transform: rotate(-45deg);
+                animation: icon-line-long 0.75s;
+            }
+        }
+
+        .icon-circle {
+            top: -4px;
+            left: -4px;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            box-sizing: content-box;
+            border: 4px solid rgba(76, 175, 80, 0.5);
+        }
+
+        .icon-fix {
+            top: 8px;
+            width: 5px;
+            left: 26px;
+            z-index: 1;
+            height: 85px;
+            position: absolute;
+            transform: rotate(-45deg);
+            background-color: #ffffff;
+        }
+    }
+}
+
+@keyframes rotate-circle {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    5% {
+        transform: rotate(-45deg);
+    }
+
+    12% {
+        transform: rotate(-405deg);
+    }
+
+    100% {
+        transform: rotate(-405deg);
+    }
+}
+
+@keyframes icon-line-tip {
+    0% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+
+    54% {
+        width: 0;
+        left: 1px;
+        top: 19px;
+    }
+
+    70% {
+        width: 50px;
+        left: -8px;
+        top: 37px;
+    }
+
+    84% {
+        width: 17px;
+        left: 21px;
+        top: 48px;
+    }
+
+    100% {
+        width: 25px;
+        left: 14px;
+        top: 45px;
+    }
+}
+
+@keyframes icon-line-long {
+    0% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+
+    65% {
+        width: 0;
+        right: 46px;
+        top: 54px;
+    }
+
+    84% {
+        width: 55px;
+        right: 0px;
+        top: 35px;
+    }
+
+    100% {
+        width: 47px;
+        right: 8px;
+        top: 38px;
+    }
+}
+
+/* 실패 화면 */
+.alert-fail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proof-fail__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #ff6b6b;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.proof-fail__description {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.proof-fail__guide-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.proof-fail__guide-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.proof-fail__guide-description {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #767676;
+}
+
+.proof-fail__subguide-wrapper {
+    position: fixed;
+    bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.proof-fail__subguide-text {
+    margin-right: 0.8rem;
+}
+
+.proof-fail__subguide-link {
+    color: #19bec9;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 모달창 CSS */
+#challengeproofModal {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    box-sizing: border-box;
+    border: 1px solid #19bec9;
+    border-radius: 3rem;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.modal__title {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0rem;
+}
+
+.modal__description {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #767676;
+}
+
+.modal__btn {
+    width: 80%;
+    height: 2rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #19bec9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.ReactModal__Overlay--after-open {
+    z-index: 100;
+}

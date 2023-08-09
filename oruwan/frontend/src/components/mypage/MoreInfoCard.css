@@ -1,0 +1,42 @@
+.info-card__wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.info-card__title-wrapper {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    color: #767676;
+    font-weight: 600;
+}
+
+.info-card__content-wrapper {
+    transform: translateY(-100%);
+    animation: slide 0.5s ease-in-out forwards;
+    border: 1px solid #19bec9;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.info-card__content-wrapper h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.info-card__content-wrapper p,
+.info-card__content-wrapper li {
+    line-height: 1.2rem;
+}
+
+@keyframes slide {
+    to {
+        transform: translateY(0);
+    }
+}

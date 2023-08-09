@@ -1,0 +1,206 @@
+/* 공통 사용 */
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: left;
+    width: 100%;
+}
+
+.description {
+    color: #999999;
+    font-size: 0.8rem;
+}
+
+.detail__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.detail__image {
+    min-width: 100vw;
+}
+
+.detail__header-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.detail__header-wrapper--item:first-child {
+    width: 25%;
+}
+
+.detail__header-wrapper--item:last-child {
+    width: 1%;
+}
+
+.detail__header-wrapper--icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.detail__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.detail__issue {
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #19bec9;
+    font-weight: 600;
+    text-align: right;
+}
+
+.detail__content-wrapper {
+    width: 100%;
+}
+
+/* grid */
+.detail__summary-wrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr); /* 1fr 1fr 1fr 1fr */
+}
+
+.detail__summary__item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5rem 0 0 0;
+}
+
+.detail__summary__item-container:nth-child(1) {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+.detail__summary__item-container:nth-child(2) {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+.detail__summary__item-container:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.detail__summary__item-container:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.detail__summary__item-container:nth-child(5) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+.detail__summary__item-container:nth-child(6) {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.detail__summary__title {
+    color: #999999;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.detail__summary__item {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* grid end */
+
+.detail__summary__time {
+    font-size: 1rem;
+}
+
+.detail__summary__prize {
+    font-size: 1rem;
+}
+
+.separator {
+    height: 3px;
+    margin: 1rem 0;
+    background-color: #dbdbdb;
+}
+
+.detail__description {
+    margin-bottom: 2rem;
+}
+
+.detail__description__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.detail__description__content {
+    overflow-wrap: break-word;
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 챌린지 진행도 표시 */
+.progress-wrapper {
+    width: 100%;
+}
+
+.progress__table-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13%, auto));
+    row-gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.progress__table-element {
+    position: relative;
+    width: 80%;
+    aspect-ratio: 1/1;
+    margin: auto;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+
+.progress__table-element--done {
+    background-color: #19bec9;
+}
+
+.progress__table-element--todo {
+    background-color: #d9d9d9;
+}
+
+.progress__table-element--today {
+    border: 3px solid #19bec9;
+}
+
+.progress__table-element--none {
+    background-color: #ffffff;
+}
+
+.progress__table-element--fail {
+    background-color: #fe5f5f;
+}
+/* 챌린지 진행도 표시 끝 */
+
+/* 인증 가이드 표시 */
+.guide-wrapper {
+    width: 100%;
+    margin-top: 1rem;
+}
+/* 인증 가이드 표시 끝 */

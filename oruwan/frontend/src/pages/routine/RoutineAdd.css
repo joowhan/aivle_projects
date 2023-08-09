@@ -1,0 +1,78 @@
+.modalAddRoutine {
+    display: column;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    height: 55%; /* 적절한 값을 설정하세요 */
+    width: 70%;
+    border: 2px solid #19BEC9;
+    
+  }
+
+.overlayAddRoutine{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+.routineAddInfo{
+    display: flex;
+}
+
+.routineAddInfo-input{
+    border-radius: 12px;
+    background: rgba(25, 190, 201, 0.10);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.routineAddInfo-inputButton{
+    border-radius: 12px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: medium;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 10%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.routineName{
+    border:none;
+    border-radius: 8px;
+    background: rgba(25, 190, 201, 0.10);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 65%;
+    width: calc(50%); /* 좌우 여백을 고려하여 입력창 크기 조정 */
+}
+
+.dayButton{
+    border-radius: 8px;
+    border : none;
+    height: 50%;
+    color: #111111;
+}

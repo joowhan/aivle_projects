@@ -1,0 +1,119 @@
+/* 헤더 */
+.post-detail__header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.post-detail__header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 8px;
+}
+
+/* 작성자 정보 */
+.post-detail__avatar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 게시글 내용 */
+
+.post-detail__content-title {
+    box-sizing: border-box;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.post-detail__header__btn{
+    background-color: transparent;
+    color: gray;
+    border: none;
+    font-weight: bold;
+}
+.profile_small_img{
+    border-radius: 50%; /* 원형으로 만들기 */
+    width: 4rem;
+    height: auto;
+    margin-right: 10px;
+}
+.post-detail__avatar__info__name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.post-detail__avatar__info__date{
+    font-size: 0.8rem;
+}
+.post-detail__content-content{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.create-post__image_blog{
+    width: 90%;
+    height: auto;
+    border-radius: 5%;
+}
+.likes__icon__detail{
+    font-size: 2.2rem;
+    color:#19bec9;
+}
+.commnet__icon__detail{
+    font-size: 2.2rem;
+    color:#19bec9;
+}
+.like__icon__button_heart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post-detail__meta-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 3px;
+  }
+  
+  .post-detail__meta-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .divider_like_comment{
+    border: none;
+    border-top: 1px solid #ccc; /* 구분선의 스타일 설정 */
+    margin: 16px 0; 
+    color:#19bec9;
+    margin-bottom: 10px;
+  }
+
+  .comment__textfield__input {
+    display: flex;
+    height: 2.5rem;
+    font-size: 2rem;
+  }
+  
+  .comment__textfield__input input {
+    flex-grow: 1;
+  }
+  
+  .comment__textfield__input button {
+    /* 필요한 스타일을 추가하세요 */
+  }
+  .comment__textfield{
+    margin-top: 10px;
+  }
+  .send__icon__detail{
+    font-size: 1.2rem;
+    color:#19bec9;
+    background-color: white;
+  }
+  .comment__textfield__btn{
+    background-color: white;
+    width: 30px;
+  }

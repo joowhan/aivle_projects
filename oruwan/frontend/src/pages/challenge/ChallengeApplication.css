@@ -1,0 +1,96 @@
+.overlay {
+  /* 화면의 전체 넓이와 높이 설정 */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.modalContainer {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail__summary-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.detail__summary-title {
+  margin-right: 10px;
+}
+
+.detail__summary-value {
+  font-weight: bold;
+}
+
+.amountContainer {
+  display: flex;
+  align-items: center;
+}
+
+.amountContainer button {
+  margin: 0 0.3rem;
+}
+
+.joinButtonGroup {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+.joinButton {
+  box-shadow: 0.25rem 0.25rem 0.25rem 0rem #dfdfdf;
+  padding: 1rem 5rem;
+  font-size: 1rem;
+  background-color: #19bec9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+}
+
+.joinButton:hover {
+  background-color: #767676;
+}

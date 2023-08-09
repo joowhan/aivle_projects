@@ -1,0 +1,28 @@
+#commonButtonContainer {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.common-btn {
+    width: 100%;
+    height: 100%;
+    background-color: #19bec9;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    transition: all 0.3s ease-out;
+}
+
+.disabled {
+    background-color: #767676;
+}

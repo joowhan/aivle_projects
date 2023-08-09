@@ -1,0 +1,121 @@
+#blogContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
+.main__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.main__more-link {
+    width: 30%;
+    color: #19bec9;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* 제목 스타일 */
+.main__title {
+    color: #19bec9;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.popular-posts {
+    overflow-x: hidden;
+}
+
+/* 카테고리 스타일 */
+.category {
+    margin-bottom: 16px;
+}
+
+/* 포스트 목록 스타일 */
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* 스크롤 컨테이너 스타일 */
+.scroll-container {
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+/* 가로로 스크롤되는 카드 컨테이너 스타일 */
+.card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 카드 컨테이너 내부 카드들의 간격과 크기 스타일 */
+.post-card {
+    flex: 0 0 280px;
+    margin-right: 16px;
+    padding: 16px;
+    background-color: #f4f4f4;
+}
+
+/* 포스트 링크 스타일 */
+.post-link {
+    min-width: 100%;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* 작성자, 날짜, 좋아요 스타일 */
+.author,
+.date,
+.like {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #808080;
+}
+
+/* 포스트 스타일 */
+.post {
+    margin-top: 32px;
+}
+
+/* 포스트 제목 스타일 */
+.post-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* 포스트 작성자 스타일 */
+.post-author {
+    margin-top: 16px;
+    font-size: 14px;
+    color: #808080;
+}
+
+/* 포스트 내용 스타일 */
+.post-content {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+/* Footer 스타일 */
+footer {
+    /* 저작권 정보, 연락처 등의 스타일을 추가하세요 */
+}

@@ -1,0 +1,93 @@
+#verifyContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.verify__wrapper {
+    width: inherit;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.verify__text--main {
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+}
+
+.verify__text--sub {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: #666666;
+}
+
+.verify-input__wrapper {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    border-bottom: 2px solid #aaaaaa;
+}
+
+.verify-input__wrapper--error {
+    border-bottom: 2px solid #ff0000;
+}
+
+.verify-input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.verify-input:focus {
+    outline: none;
+}
+
+.verify__timer {
+    margin-right: 1em;
+    color: #ff0000;
+}
+
+.verify__error-message {
+    margin-top: 0.5rem;
+    color: #ff0000;
+    font-size: 0.8rem;
+}
+
+.verify-btn {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #19bec9;
+    color: #fff;
+    font-size: 1em;
+}
+
+.verify-btn:disabled {
+    background-color: #dfdfdf;
+    color: #fff;
+}
+
+.verify__resend {
+    width: 5rem;
+    border: none;
+    background-color: transparent;
+    color: #666666;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.verify__info-message {
+    margin-top: 1rem;
+    color: #666666;
+    font-size: 0.8rem;
+}

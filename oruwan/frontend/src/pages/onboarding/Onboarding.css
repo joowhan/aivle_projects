@@ -1,0 +1,72 @@
+.sun-iso-color-icon {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 100.5px);
+    width: 12.5rem;
+    height: 12.5rem;
+    object-fit: cover;
+  }
+  .div3 {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 2.75rem;
+    font-weight: 600;
+  }
+  .p2 {
+    margin: 0;
+  }
+  .div4 {
+    position: relative;
+    font-size: 0.88rem;
+    letter-spacing: -0.02em;
+    line-height: 1.38rem;
+  }
+  .group {
+    position: absolute;
+    top: 14.5rem;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+  }
+  .sun-iso-color-parent {
+    position: absolute;
+    top: 15.25rem;
+    left: calc(50% - 118px);
+    width: 15.31rem;
+    height: 20.75rem;
+  }
+  .div5 {
+    position: relative;
+    letter-spacing: -0.02em;
+    line-height: 1.63rem;
+    font-weight: 600;
+  }
+  .wrapper {
+    position: absolute;
+    top: 45rem;
+    left: calc(50% - 165.5px);
+    border-radius: 16px;
+    background-color: #19bec9;
+    box-shadow: 8px 8px 8px rgba(25, 190, 201, 0.1);
+    display: flex;
+    flex-direction: row;
+    padding: 1.06rem 8.31rem;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 1.13rem;
+    color: #fff;
+  }
+  .onboard1 {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 52.75rem;
+
+    text-align: center;
+    font-size: 2rem;
+    color: #000;
+    font-family: Roboto;
+  }

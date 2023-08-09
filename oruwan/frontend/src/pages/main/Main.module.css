@@ -1,0 +1,18 @@
+.home__Subtitle{
+    font-size: 1rem;
+    /* font-style: bold; */
+}
+.routine__Btn {
+    padding: 8px;
+    margin: 10px;
+    /* border: 2px solid; */
+    box-shadow: 5px 5px 5px #E1E1E1;
+    border-radius: 5px;
+    background-color: #F3FCFC;
+    color: #111111;
+    font-size: 2rem;
+}
+.checked{
+    position: relative;
+    left: 300px;
+}
