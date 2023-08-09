@@ -1,0 +1,20 @@
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv2d (Conv2D)             (None, 28, 28, 16)        160       
+                                                                 
+ max_pooling2d (MaxPooling2D  (None, 14, 14, 16)       0         
+ )                                                               
+                                                                 
+ flatten (Flatten)           (None, 3136)              0         
+                                                                 
+ dense (Dense)               (None, 128)               401536    
+                                                                 
+ dense_1 (Dense)             (None, 26)                3354      
+                                                                 
+=================================================================
+Total params: 405,050
+Trainable params: 405,050
+Non-trainable params: 0
+_________________________________________________________________

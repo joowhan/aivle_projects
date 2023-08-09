@@ -1,0 +1,30 @@
+artifact_path: best_estimator
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.11
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.2
+mlflow_version: 2.3.0
+model_uuid: 15bfd5d2e41e41c38f8c053b1b714e01
+run_id: 8cf5102eb82e40a685449820438e120f
+signature:
+  inputs: '[{"name": "CompPrice", "type": "long"}, {"name": "Income", "type": "long"},
+    {"name": "Advertising", "type": "long"}, {"name": "Population", "type": "long"},
+    {"name": "Price", "type": "long"}, {"name": "Age", "type": "long"}, {"name": "ShelveLoc_Medium",
+    "type": "boolean"}, {"name": "ShelveLoc_Good", "type": "boolean"}, {"name": "Education_11",
+    "type": "boolean"}, {"name": "Education_12", "type": "boolean"}, {"name": "Education_13",
+    "type": "boolean"}, {"name": "Education_14", "type": "boolean"}, {"name": "Education_15",
+    "type": "boolean"}, {"name": "Education_16", "type": "boolean"}, {"name": "Education_17",
+    "type": "boolean"}, {"name": "Education_18", "type": "boolean"}, {"name": "US_Yes",
+    "type": "boolean"}, {"name": "Urban_Yes", "type": "boolean"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-05-18 03:10:31.000845'
