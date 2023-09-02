@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <a href="/blog/"> Blog </a>
+    <title>Create Post - Blog</title>
+</head>
+<body>
+      <h1>Create a New Post</h1>
+      <hr/>
+      <form method="post" enctype="multipart/form-data">
+          {% csrf_token %}
+          <table>
+              {{form}}
+          </table>
+          <button type="submit" class="btn btn-primary float-right">Submit</button>
+      </form>
+</body>
+</html>
